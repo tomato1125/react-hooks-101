@@ -1,27 +1,27 @@
-action = {
-  type: 'CREATE_EVENT',
-  title: '2020東京オリンピックのお知らせ',
-  body: '2020年に東京でオリンピックを開催します！つきましては、、、、、'
-}
+// action = {
+//   type: 'CREATE_EVENT',
+//   title: '2020東京オリンピックのお知らせ',
+//   body: '2020年に東京でオリンピックを開催します！つきましては、、、、、'
+// }
 
-before
-state = []
-after
-state = [
-  {
-    id: 1,
-    title: '2020東京オリンピックのお知らせ',
-    body: '2020年に東京でオリンピックを開催します！つきましては、、、、、'
+// before
+// state = []
+// after
+// state = [
+//   {
+//     id: 1,
+//     title: '2020東京オリンピックのお知らせ',
+//     body: '2020年に東京でオリンピックを開催します！つきましては、、、、、'
     
-  }
-]
+//   }
+// ]
 
-state = []
-state = [
-  { id: 1, title: 'タイトル１', body: 'ボディー１'},
-  { id: 1, title: 'タイトル１', body: 'ボディー１'},
-  { id: 1, title: 'タイトル１', body: 'ボディー１'},
-]
+// state = []
+// state = [
+//   { id: 1, title: 'タイトル１', body: 'ボディー１'},
+//   { id: 1, title: 'タイトル１', body: 'ボディー１'},
+//   { id: 1, title: 'タイトル１', body: 'ボディー１'},
+// ]
 
 const events = (state = [], action) => {
   switch(action.type) {
