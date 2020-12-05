@@ -57,15 +57,15 @@ const App = () => {
             state.map((event, index) => {
               const id = event.id
               const handleClickDeleteButton = () => {}
-                dispatch({ type: 'DELETE_EVENT', id: event.id })
+                dispatch({ type: 'DELETE_EVENT', id })
 
               return (
-              <tr key={index}>
-                <td>{id}</td>
-                <td>{event.id}</td>
-                <td>{event.title}</td>
-                <td><button type="button" className="btn btn-danger" onClick={handleClickDeleteButton}>削除</button></td>
-              </tr>
+                <tr key={index}>
+                  <td>{id}</td>
+                  <td>{event.title}</td>
+                  <td>{event.body}</td>
+                  <td><button type="button" className="btn btn-danger" onClick={handleClickDeleteButton}>削除</button></td>
+                </tr>
               )
             })
           }
